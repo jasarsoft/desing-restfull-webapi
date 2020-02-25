@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "2ff3a126-b154-456c-9b42-330211f3ff43",
+		"name": "Designing RESTful Web APIs",
+		"description": "https://app.pluralsight.com/library/courses/designing-restful-web-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://arest.me/api/regions/africa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/regions",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/regions/africa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/regions/africa",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"regions",
+						"africa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/regions/africa/sites",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/regions/africa/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"regions",
+						"africa",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites?country=usa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?country=usa",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "usa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites/1207",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites/1207",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1207"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"<i>Aflaj</i> Irrigation Systems of Oman\",\r\n    \"yearInscribed\": 2007,\r\n    \"url\": \"https://whc.unesco.org/en/list/1207\",\r\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1207.jpg\",\r\n    \"descriptionMarkup\": \"<p>The property includes five <em>aflaj</em> irrigation systems and is representative of some 3,000 such systems still in use in Oman. The origins of this system of irrigation may date back to AD 500, but archaeological evidence suggests that irrigation systems existed in this extremely arid area as early as 2500 BC. Using gravity, water is channelled from underground sources or springs to support agriculture and domestic use. The fair and effective management and sharing of water in villages and towns is still underpinned by mutual dependence and communal values and guided by astronomical observations. Numerous watchtowers built to defend the water systems form part of the site reflecting the historic dependence of communities on the <em>aflaj</em> system. Threatened by falling level of the underground water table, the <em>aflaj</em> represent an exceptionally well-preserved form of land use.</p>\",\r\n    \"states\": \"Oman\",\r\n    \"location\": {\r\n        \"name\": \"Dakhiliya, Sharqiya and Batinah Regions\",\r\n        \"longitude\": 57.5360555555,\r\n        \"latitude\": 57.5360555555\r\n    },\r\n    \"categoryName\": \"Natural\",\r\n    \"regionName\": \"Arab States\"\r\n}"
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1581,\r\n    \"name\": \"<i>Aflaj</i> Irrigation Systems of Oman\",\r\n    \"yearInscribed\": 2008,\r\n    \"url\": \"https://whc.unesco.org/en/list/1207\",\r\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1207.jpg\",\r\n    \"descriptionMarkup\": \"<p>The property includes five <em>aflaj</em> irrigation systems and is representative of some 3,000 such systems still in use in Oman. The origins of this system of irrigation may date back to AD 500, but archaeological evidence suggests that irrigation systems existed in this extremely arid area as early as 2500 BC. Using gravity, water is channelled from underground sources or springs to support agriculture and domestic use. The fair and effective management and sharing of water in villages and towns is still underpinned by mutual dependence and communal values and guided by astronomical observations. Numerous watchtowers built to defend the water systems form part of the site reflecting the historic dependence of communities on the <em>aflaj</em> system. Threatened by falling level of the underground water table, the <em>aflaj</em> represent an exceptionally well-preserved form of land use.</p>\",\r\n    \"states\": \"Oman\",\r\n    \"location\": {\r\n        \"name\": \"Dakhiliya, Sharqiya and Batinah Regions\",\r\n        \"longitude\": 57.5360555555,\r\n        \"latitude\": 57.5360555555\r\n    },\r\n    \"categoryName\": \"Natural\",\r\n    \"regionName\": \"Arab States\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites/1581",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1581"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites/1581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites/1581",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1581"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites?useWrapper=true",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?useWrapper=true",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "useWrapper",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites?page=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?page=4",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites/1581",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://arest.me/api/sites/1581",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1581"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites?useHeaders=false&page=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?useHeaders=false&page=1",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "useHeaders",
+							"value": "false"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://arest.me/api/sites?useHeaders=false&page=2&pagesize=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?useHeaders=false&page=2&pagesize=2",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "useHeaders",
+							"value": "false"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "pagesize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
